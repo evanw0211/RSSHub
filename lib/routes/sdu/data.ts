@@ -5,10 +5,8 @@ export default {
             route: '/news',
             source: ['/*path', '/'],
             titlePrefix: '(威海)新闻网|',
-            docs: 'https://docs.rsshub.app/university#shan-dong-da-xue-wei-hai',
-            getTarget(url) {
-                return this.route + '/' + url.replace(/\.htm$/, '');
-            },
+            docs: 'https://docs.rsshub.app/routes/university#shan-dong-da-xue-wei-hai',
+            getTarget: (url) => '/news/' + url.replace(/\.htm$/, ''),
             url: 'https://xinwen.wh.sdu.edu.cn/',
             columns: {
                 xyyw: {
@@ -62,10 +60,8 @@ export default {
             route: '/jwc',
             source: ['/*path', '/'],
             titlePrefix: '(威海)教务处|',
-            docs: 'https://docs.rsshub.app/university#shan-dong-da-xue-wei-hai',
-            getTarget(url) {
-                return this.route + '/' + url.replace(/\.htm$/, '');
-            },
+            docs: 'https://docs.rsshub.app/routes/university#shan-dong-da-xue-wei-hai',
+            getTarget: (url) => '/jwc/' + url.replace(/\.htm$/, ''),
             url: 'https://jwc.wh.sdu.edu.cn/',
             columns: {
                 gzzd: {
